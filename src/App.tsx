@@ -26,7 +26,7 @@ function App() {
     setError(null);
     
     try {
-      const response = await fetch(`/${filename}`);
+      const response = await fetch(`${import.meta.env.BASE_URL}${filename}`);
       if (!response.ok) {
         throw new Error(`Failed to load ${filename}: ${response.status}`);
       }
