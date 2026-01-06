@@ -15,6 +15,8 @@ export interface DiagnosticEvent {
           i128?: string;
           string?: string;
           bool?: boolean;
+          error?: any;
+          vec?: any[];
         }>;
         data: any;
       };

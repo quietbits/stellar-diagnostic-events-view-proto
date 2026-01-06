@@ -38,10 +38,29 @@ export function processEvents(events: DiagnosticEvent[]): ProcessedEvent[] {
       type,
       contractId: event.event.contract_id,
       functionName,
-      topics: topics.map(t => 
-        t.symbol || t.bytes || t.address || t.u32?.toString() || 
-        t.u64?.toString() || t.i128 || t.string || t.bool?.toString() || 'unknown'
-      ),
+      topics: topics.map(t => {
+        if (t.symbol) return t.symbol;
+        if (t.bytes) return t.bytes;
+        if (t.address) return t.address;
+        if (t.u32) return t.u32.toString();
+        if (t.u64) return t.u64.toString();
+        if (t.i128) return t.i128;
+        if (t.string) return t.string;
+        if (t.bool !== undefined) return t.bool.toString();
+        if (t.error) {
+          // Handle error objects like {contract: 1}
+          if (typeof t.error === 'object') {
+            const entries = Object.entries(t.error);
+            return `error(${entries.map(([k, v]) => `${k}:${v}`).join(',')})`;
+          }
+          return `error(${t.error})`;
+        }
+        if (t.vec) {
+          // Handle vector/array topics
+          return `[${t.vec.length} items]`;
+        }
+        return 'unknown';
+      }),
       data: event.event.body.v0.data,
       level,
       originalEvent: event
@@ -74,6 +93,14 @@ export function formatValue(value: any, maxDepth: number = 2, currentDepth: numb
   if (value.symbol) return value.symbol;
   if (value.string) return `"${value.string}"`;
   if (value.bool !== undefined) return value.bool.toString();
+  if (value.error) {
+    // Handle error objects like {contract: 1}
+    if (typeof value.error === 'object') {
+      const entries = Object.entries(value.error);
+      return `error(${entries.map(([k, v]) => `${k}:${v}`).join(',')})`;
+    }
+    return `error(${value.error})`;
+  }
   
   // Handle Stellar map structures (key-value pairs)
   if (value.map && Array.isArray(value.map)) {
@@ -136,6 +163,14 @@ export function formatValueWithTypes(value: any, maxDepth: number = 2, currentDe
   if (value.symbol) return `${value.symbol} (symbol)`;
   if (value.string) return `"${value.string}" (string)`;
   if (value.bool !== undefined) return `${value.bool} (bool)`;
+  if (value.error) {
+    // Handle error objects like {contract: 1}
+    if (typeof value.error === 'object') {
+      const entries = Object.entries(value.error);
+      return `error(${entries.map(([k, v]) => `${k}:${v}`).join(',')}) (error)`;
+    }
+    return `error(${value.error}) (error)`;
+  }
   
   // Handle Stellar map structures (key-value pairs)
   if (value.map && Array.isArray(value.map)) {

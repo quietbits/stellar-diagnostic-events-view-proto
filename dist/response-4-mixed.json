@@ -1,0 +1,1657 @@
+{
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+        "latestLedger": 60632900,
+        "latestLedgerCloseTime": "1767645823",
+        "oldestLedger": 60511941,
+        "oldestLedgerCloseTime": "1766952224",
+        "status": "SUCCESS",
+        "txHash": "a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456",
+        "applicationOrder": 150,
+        "feeBump": true,
+        "envelopeJson": {
+            "tx_fee_bump": {
+                "tx": {
+                    "fee_source": "GBGWQFSJSOMJ2BTOH5RLZUTZPV544YR2DF5CGYL7WDZ2Y6OSRHR6TUBE",
+                    "fee": "500000",
+                    "inner_tx": {
+                        "tx": {
+                            "tx": {
+                                "source_account": "GBQAEHHTARSP5RQKKOVHQNOB7GCMR76DLIUY5HU5MYFBJ5TLQPVWJVT6",
+                                "fee": 450000,
+                                "seq_num": "247606385032890267",
+                                "cond": {
+                                    "time": {
+                                        "min_time": "0",
+                                        "max_time": "1767645800"
+                                    }
+                                },
+                                "memo": "none",
+                                "operations": [
+                                    {
+                                        "source_account": null,
+                                        "body": {
+                                            "invoke_host_function": {
+                                                "host_function": {
+                                                    "invoke_contract": {
+                                                        "contract_address": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                                                        "function_name": "multi_harvest_with_swap",
+                                                        "args": [
+                                                            {
+                                                                "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                                            },
+                                                            {
+                                                                "vec": [
+                                                                    {
+                                                                        "u32": 113278
+                                                                    },
+                                                                    {
+                                                                        "u32": 113280
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "u128": "2000000000"
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                "auth": []
+                                            }
+                                        }
+                                    }
+                                ],
+                                "ext": {
+                                    "v1": {
+                                        "ext": "v0",
+                                        "resources": {
+                                            "footprint": {
+                                                "read_only": [
+                                                    {
+                                                        "contract_data": {
+                                                            "contract": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                                                            "key": "ledger_key_contract_instance",
+                                                            "durability": "persistent"
+                                                        }
+                                                    },
+                                                    {
+                                                        "contract_data": {
+                                                            "contract": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y",
+                                                            "key": "ledger_key_contract_instance",
+                                                            "durability": "persistent"
+                                                        }
+                                                    }
+                                                ],
+                                                "read_write": [
+                                                    {
+                                                        "trustline": {
+                                                            "account_id": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S",
+                                                            "asset": {
+                                                                "credit_alphanum4": {
+                                                                    "asset_code": "KALE",
+                                                                    "issuer": "GBDVX4VELCDSQ54KQJYTNHXAHFLBCA77ZY2USQBM4CSHTTV7DME7KALE"
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                ]
+                                            },
+                                            "instructions": 8000000,
+                                            "disk_read_bytes": 200,
+                                            "write_bytes": 150
+                                        },
+                                        "resource_fee": "450000"
+                                    }
+                                }
+                            },
+                            "signatures": [
+                                {
+                                    "hint": "6b83eb64",
+                                    "signature": "mixed4ebefab4a86fc9242a7b86e965cca258ce2f8ab7415191a78fb347c424ad85693f11a50605b536694b36567bba0885f12e02d2e9f167f8dc79d3426c897a720b"
+                                }
+                            ]
+                        }
+                    },
+                    "ext": "v0"
+                },
+                "signatures": [
+                    {
+                        "hint": "d289e3e9",
+                        "signature": "mixedaca86ccde2b2e07f3e2731b8823434f7d2ac92de675be3bb39284b33047fc4575d0640e240d90606c5948e689b260fbd0baf9818a0329fc8f28160b8d197210b"
+                    }
+                ]
+            }
+        },
+        "resultJson": {
+            "fee_charged": "350000",
+            "result": {
+                "tx_fee_bump_inner_success": {
+                    "transaction_hash": "mixed1b199d513628b95881626fd13e38ac371762a858ea9cf94829043dc08a76",
+                    "result": {
+                        "fee_charged": "300000",
+                        "result": {
+                            "tx_success": [
+                                {
+                                    "op_inner": {
+                                        "invoke_host_function": {
+                                            "success": "mixed7d3fa97ed44e7ffde39096238dd411f840b0aaafb38f1578e4d1b41b6494b"
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        "ext": "v0"
+                    }
+                }
+            },
+            "ext": "v0"
+        },
+        "resultMetaJson": {
+            "v4": {
+                "ext": "v0",
+                "tx_changes_before": [],
+                "operations": [
+                    {
+                        "ext": "v0",
+                        "changes": [],
+                        "events": [
+                            {
+                                "ext": "v0",
+                                "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                                "type_": "contract",
+                                "body": {
+                                    "v0": {
+                                        "topics": [
+                                            {
+                                                "symbol": "harvest_started"
+                                            },
+                                            {
+                                                "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                            }
+                                        ],
+                                        "data": {
+                                            "vec": [
+                                                {
+                                                    "u32": 113278
+                                                },
+                                                {
+                                                    "u32": 113280
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            }
+                        ],
+                        "return_value": {
+                            "i128": "5000000"
+                        }
+                    }
+                ],
+                "events": [
+                    {
+                        "stage": "before_all_txs",
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": null,
+                            "type_": "system",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "tx_start"
+                                        }
+                                    ],
+                                    "data": "void"
+                                }
+                            }
+                        }
+                    }
+                ],
+                "diagnostic_events": [
+                    {
+                        "in_successful_contract_call": true,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": null,
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "4d20ab0cc3bce618f0bddae0c4d5a0cb41d45abac5b95dcdec7526dd0b8fee25"
+                                        },
+                                        {
+                                            "symbol": "multi_harvest_with_swap"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                            },
+                                            {
+                                                "vec": [
+                                                    {
+                                                        "u32": 113278
+                                                    },
+                                                    {
+                                                        "u32": 113280
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "u128": "2000000000"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": true,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "d7fe44bd0af11d602b1091f2f4a1f4df212d444d0321ea32adb3cc1cbbab0a04"
+                                        },
+                                        {
+                                            "symbol": "harvest"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                            },
+                                            {
+                                                "u32": 113278
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": true,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_return"
+                                        },
+                                        {
+                                            "symbol": "harvest"
+                                        }
+                                    ],
+                                    "data": {
+                                        "i128": "2500000"
+                                    }
+                                }
+                            }
+                        }
+                    }
+,
+                    {
+                        "in_successful_contract_call": true,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "cross_contract_swap_call"
+                                        },
+                                        {
+                                            "symbol": "attempt_swap"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "u128": "2000000000"
+                                            },
+                                            {
+                                                "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": null,
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "b4905f3ef7b78b525c24ef9ae8d323009164b3566403d4013f63431a2ac084a0"
+                                        },
+                                        {
+                                            "symbol": "b"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "u128": "2000000000"
+                                            },
+                                            {
+                                                "u128": "2000000000"
+                                            },
+                                            {
+                                                "vec": [
+                                                    {
+                                                        "vec": [
+                                                            {
+                                                                "u32": 2
+                                                            },
+                                                            {
+                                                                "u32": 2
+                                                            },
+                                                            {
+                                                                "u32": 2999
+                                                            },
+                                                            {
+                                                                "u32": 1
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "vec": [
+                                                            {
+                                                                "u32": 4
+                                                            },
+                                                            {
+                                                                "u32": 1
+                                                            },
+                                                            {
+                                                                "u32": 4027
+                                                            },
+                                                            {
+                                                                "u32": 0
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "0dd5c710ea6a4a23b32207fd130eadf9c9ce899f4308e93e4ffe53fbaf108a04"
+                                        },
+                                        {
+                                            "symbol": "router_pair_for"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "address": "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75"
+                                            },
+                                            {
+                                                "address": "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CAG5LRYQ5JVEUI5TEID72EYOVX44TTUJT5BQR2J6J77FH65PCCFAJDDH",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_return"
+                                        },
+                                        {
+                                            "symbol": "router_pair_for"
+                                        }
+                                    ],
+                                    "data": {
+                                        "address": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "0dd5c710ea6a4a23b32207fd130eadf9c9ce899f4308e93e4ffe53fbaf108a04"
+                                        },
+                                        {
+                                            "symbol": "swap_exact_tokens_for_tokens"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "i128": "2000000000"
+                                            },
+                                            {
+                                                "i128": "1"
+                                            },
+                                            {
+                                                "vec": [
+                                                    {
+                                                        "address": "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV"
+                                                    },
+                                                    {
+                                                        "address": "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75"
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                            },
+                                            {
+                                                "u64": "18446744073709551615"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CAG5LRYQ5JVEUI5TEID72EYOVX44TTUJT5BQR2J6J77FH65PCCFAJDDH",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "be21971aa986e1a7f67bb6942b4cbadc0baf8b8c042e6e89184084f2552bb676"
+                                        },
+                                        {
+                                            "symbol": "get_reserves"
+                                        }
+                                    ],
+                                    "data": "void"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_return"
+                                        },
+                                        {
+                                            "symbol": "get_reserves"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "i128": "2825306690719"
+                                            },
+                                            {
+                                                "i128": "2389869922102"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CAG5LRYQ5JVEUI5TEID72EYOVX44TTUJT5BQR2J6J77FH65PCCFAJDDH",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "e6a7d9eb7523006a469aa7483ad1107247443c0d82e62763de670848c4e97c90"
+                                        },
+                                        {
+                                            "symbol": "transfer"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                            },
+                                            {
+                                                "address": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC"
+                                            },
+                                            {
+                                                "i128": "2000000000"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV",
+                            "type_": "contract",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "transfer"
+                                        },
+                                        {
+                                            "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                        },
+                                        {
+                                            "address": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC"
+                                        },
+                                        {
+                                            "string": "EURC:GDHU6WRG4IEQXM5NZ4BMPKOXHW76MZM4Y2IEMFDVXBSDP6SJY4ITNPP2"
+                                        }
+                                    ],
+                                    "data": {
+                                        "i128": "2000000000"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_return"
+                                        },
+                                        {
+                                            "symbol": "transfer"
+                                        }
+                                    ],
+                                    "data": "void"
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CAG5LRYQ5JVEUI5TEID72EYOVX44TTUJT5BQR2J6J77FH65PCCFAJDDH",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "be21971aa986e1a7f67bb6942b4cbadc0baf8b8c042e6e89184084f2552bb676"
+                                        },
+                                        {
+                                            "symbol": "swap"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "i128": "2353381748"
+                                            },
+                                            {
+                                                "i128": "0"
+                                            },
+                                            {
+                                                "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": false,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "error"
+                                        },
+                                        {
+                                            "symbol": "insufficient_liquidity"
+                                        }
+                                    ],
+                                    "data": {
+                                        "string": "Swap failed: insufficient liquidity for requested amount"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": true,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "fallback_handler"
+                                        },
+                                        {
+                                            "symbol": "handle_swap_failure"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "string": "Swap failed, continuing with harvest only"
+                                            },
+                                            {
+                                                "u128": "2000000000"
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": true,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_call"
+                                        },
+                                        {
+                                            "bytes": "d7fe44bd0af11d602b1091f2f4a1f4df212d444d0321ea32adb3cc1cbbab0a04"
+                                        },
+                                        {
+                                            "symbol": "harvest"
+                                        }
+                                    ],
+                                    "data": {
+                                        "vec": [
+                                            {
+                                                "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                            },
+                                            {
+                                                "u32": 113280
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": true,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_return"
+                                        },
+                                        {
+                                            "symbol": "harvest"
+                                        }
+                                    ],
+                                    "data": {
+                                        "i128": "2500000"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "in_successful_contract_call": true,
+                        "event": {
+                            "ext": "v0",
+                            "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                            "type_": "diagnostic",
+                            "body": {
+                                "v0": {
+                                    "topics": [
+                                        {
+                                            "symbol": "fn_return"
+                                        },
+                                        {
+                                            "symbol": "multi_harvest_with_swap"
+                                        }
+                                    ],
+                                    "data": {
+                                        "map": [
+                                            {
+                                                "key": {
+                                                    "symbol": "total_harvested"
+                                                },
+                                                "val": {
+                                                    "i128": "5000000"
+                                                }
+                                            },
+                                            {
+                                                "key": {
+                                                    "symbol": "swap_attempted"
+                                                },
+                                                "val": {
+                                                    "bool": true
+                                                }
+                                            },
+                                            {
+                                                "key": {
+                                                    "symbol": "swap_successful"
+                                                },
+                                                "val": {
+                                                    "bool": false
+                                                }
+                                            },
+                                            {
+                                                "key": {
+                                                    "symbol": "failure_reason"
+                                                },
+                                                "val": {
+                                                    "string": "insufficient_liquidity"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ],
+                "tx_changes_after": []
+            }
+        },
+        "diagnosticEventsJson": [
+            {
+                "in_successful_contract_call": true,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": null,
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "4d20ab0cc3bce618f0bddae0c4d5a0cb41d45abac5b95dcdec7526dd0b8fee25"
+                                },
+                                {
+                                    "symbol": "multi_harvest_with_swap"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                    },
+                                    {
+                                        "vec": [
+                                            {
+                                                "u32": 113278
+                                            },
+                                            {
+                                                "u32": 113280
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "u128": "2000000000"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": true,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "d7fe44bd0af11d602b1091f2f4a1f4df212d444d0321ea32adb3cc1cbbab0a04"
+                                },
+                                {
+                                    "symbol": "harvest"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                    },
+                                    {
+                                        "u32": 113278
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": true,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_return"
+                                },
+                                {
+                                    "symbol": "harvest"
+                                }
+                            ],
+                            "data": {
+                                "i128": "2500000"
+                            }
+                        }
+                    }
+                }
+            }
+,
+            {
+                "in_successful_contract_call": true,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "cross_contract_swap_call"
+                                },
+                                {
+                                    "symbol": "attempt_swap"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "u128": "2000000000"
+                                    },
+                                    {
+                                        "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": null,
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "b4905f3ef7b78b525c24ef9ae8d323009164b3566403d4013f63431a2ac084a0"
+                                },
+                                {
+                                    "symbol": "b"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "u128": "2000000000"
+                                    },
+                                    {
+                                        "u128": "2000000000"
+                                    },
+                                    {
+                                        "vec": [
+                                            {
+                                                "vec": [
+                                                    {
+                                                        "u32": 2
+                                                    },
+                                                    {
+                                                        "u32": 2
+                                                    },
+                                                    {
+                                                        "u32": 2999
+                                                    },
+                                                    {
+                                                        "u32": 1
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "vec": [
+                                                    {
+                                                        "u32": 4
+                                                    },
+                                                    {
+                                                        "u32": 1
+                                                    },
+                                                    {
+                                                        "u32": 4027
+                                                    },
+                                                    {
+                                                        "u32": 0
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "0dd5c710ea6a4a23b32207fd130eadf9c9ce899f4308e93e4ffe53fbaf108a04"
+                                },
+                                {
+                                    "symbol": "router_pair_for"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "address": "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75"
+                                    },
+                                    {
+                                        "address": "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CAG5LRYQ5JVEUI5TEID72EYOVX44TTUJT5BQR2J6J77FH65PCCFAJDDH",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_return"
+                                },
+                                {
+                                    "symbol": "router_pair_for"
+                                }
+                            ],
+                            "data": {
+                                "address": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "0dd5c710ea6a4a23b32207fd130eadf9c9ce899f4308e93e4ffe53fbaf108a04"
+                                },
+                                {
+                                    "symbol": "swap_exact_tokens_for_tokens"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "i128": "2000000000"
+                                    },
+                                    {
+                                        "i128": "1"
+                                    },
+                                    {
+                                        "vec": [
+                                            {
+                                                "address": "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV"
+                                            },
+                                            {
+                                                "address": "CCW67TSZV3SSS2HXMBQ5JFGCKJNXKZM7UQUWUZPUTHXSTZLEO7SJMI75"
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                    },
+                                    {
+                                        "u64": "18446744073709551615"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CAG5LRYQ5JVEUI5TEID72EYOVX44TTUJT5BQR2J6J77FH65PCCFAJDDH",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "be21971aa986e1a7f67bb6942b4cbadc0baf8b8c042e6e89184084f2552bb676"
+                                },
+                                {
+                                    "symbol": "get_reserves"
+                                }
+                            ],
+                            "data": "void"
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_return"
+                                },
+                                {
+                                    "symbol": "get_reserves"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "i128": "2825306690719"
+                                    },
+                                    {
+                                        "i128": "2389869922102"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CAG5LRYQ5JVEUI5TEID72EYOVX44TTUJT5BQR2J6J77FH65PCCFAJDDH",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "e6a7d9eb7523006a469aa7483ad1107247443c0d82e62763de670848c4e97c90"
+                                },
+                                {
+                                    "symbol": "transfer"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                    },
+                                    {
+                                        "address": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC"
+                                    },
+                                    {
+                                        "i128": "2000000000"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV",
+                    "type_": "contract",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "transfer"
+                                },
+                                {
+                                    "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                },
+                                {
+                                    "address": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC"
+                                },
+                                {
+                                    "string": "EURC:GDHU6WRG4IEQXM5NZ4BMPKOXHW76MZM4Y2IEMFDVXBSDP6SJY4ITNPP2"
+                                }
+                            ],
+                            "data": {
+                                "i128": "2000000000"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CDTKPWPLOURQA2SGTKTUQOWRCBZEORB4BWBOMJ3D3ZTQQSGE5F6JBQLV",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_return"
+                                },
+                                {
+                                    "symbol": "transfer"
+                                }
+                            ],
+                            "data": "void"
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CAG5LRYQ5JVEUI5TEID72EYOVX44TTUJT5BQR2J6J77FH65PCCFAJDDH",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "be21971aa986e1a7f67bb6942b4cbadc0baf8b8c042e6e89184084f2552bb676"
+                                },
+                                {
+                                    "symbol": "swap"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "i128": "2353381748"
+                                    },
+                                    {
+                                        "i128": "0"
+                                    },
+                                    {
+                                        "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": false,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CC7CDFY2VGDODJ7WPO3JIK2MXLOAXL4LRQCC43UJDBAIJ4SVFO3HNPOC",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "error"
+                                },
+                                {
+                                    "symbol": "insufficient_liquidity"
+                                }
+                            ],
+                            "data": {
+                                "string": "Swap failed: insufficient liquidity for requested amount"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": true,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "fallback_handler"
+                                },
+                                {
+                                    "symbol": "handle_swap_failure"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "string": "Swap failed, continuing with harvest only"
+                                    },
+                                    {
+                                        "u128": "2000000000"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": true,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_call"
+                                },
+                                {
+                                    "bytes": "d7fe44bd0af11d602b1091f2f4a1f4df212d444d0321ea32adb3cc1cbbab0a04"
+                                },
+                                {
+                                    "symbol": "harvest"
+                                }
+                            ],
+                            "data": {
+                                "vec": [
+                                    {
+                                        "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                    },
+                                    {
+                                        "u32": 113280
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": true,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CDL74RF5BLYR2YBLCCI7F5FB6TPSCLKEJUBSD2RSVWZ4YHF3VMFAIGWA",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_return"
+                                },
+                                {
+                                    "symbol": "harvest"
+                                }
+                            ],
+                            "data": {
+                                "i128": "2500000"
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "in_successful_contract_call": true,
+                "event": {
+                    "ext": "v0",
+                    "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                    "type_": "diagnostic",
+                    "body": {
+                        "v0": {
+                            "topics": [
+                                {
+                                    "symbol": "fn_return"
+                                },
+                                {
+                                    "symbol": "multi_harvest_with_swap"
+                                }
+                            ],
+                            "data": {
+                                "map": [
+                                    {
+                                        "key": {
+                                            "symbol": "total_harvested"
+                                        },
+                                        "val": {
+                                            "i128": "5000000"
+                                        }
+                                    },
+                                    {
+                                        "key": {
+                                            "symbol": "swap_attempted"
+                                        },
+                                        "val": {
+                                            "bool": true
+                                        }
+                                    },
+                                    {
+                                        "key": {
+                                            "symbol": "swap_successful"
+                                        },
+                                        "val": {
+                                            "bool": false
+                                        }
+                                    },
+                                    {
+                                        "key": {
+                                            "symbol": "failure_reason"
+                                        },
+                                        "val": {
+                                            "string": "insufficient_liquidity"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        ],
+        "events": {
+            "transactionEventsJson": [
+                {
+                    "stage": "before_all_txs",
+                    "event": {
+                        "ext": "v0",
+                        "contract_id": null,
+                        "type_": "system",
+                        "body": {
+                            "v0": {
+                                "topics": [
+                                    {
+                                        "symbol": "tx_start"
+                                    }
+                                ],
+                                "data": "void"
+                            }
+                        }
+                    }
+                }
+            ],
+            "contractEventsJson": [
+                [
+                    {
+                        "ext": "v0",
+                        "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                        "type_": "contract",
+                        "body": {
+                            "v0": {
+                                "topics": [
+                                    {
+                                        "symbol": "harvest_started"
+                                    },
+                                    {
+                                        "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                    }
+                                ],
+                                "data": {
+                                    "vec": [
+                                        {
+                                            "u32": 113278
+                                        },
+                                        {
+                                            "u32": 113280
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "ext": "v0",
+                        "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                        "type_": "contract",
+                        "body": {
+                            "v0": {
+                                "topics": [
+                                    {
+                                        "symbol": "swap_attempted"
+                                    },
+                                    {
+                                        "address": "CC2JAXZ6663YWUS4ETXZV2GTEMAJCZFTKZSAHVABH5RUGGRKYCCKBR3Y"
+                                    }
+                                ],
+                                "data": {
+                                    "map": [
+                                        {
+                                            "key": {
+                                                "symbol": "amount"
+                                            },
+                                            "val": {
+                                                "u128": "2000000000"
+                                            }
+                                        },
+                                        {
+                                            "key": {
+                                                "symbol": "success"
+                                            },
+                                            "val": {
+                                                "bool": false
+                                            }
+                                        },
+                                        {
+                                            "key": {
+                                                "symbol": "reason"
+                                            },
+                                            "val": {
+                                                "string": "insufficient_liquidity"
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "ext": "v0",
+                        "contract_id": "CBGSBKYMYO6OMGHQXXNOBRGVUDFUDVC2XLC3SXON5R2SNXILR7XCKKY3",
+                        "type_": "contract",
+                        "body": {
+                            "v0": {
+                                "topics": [
+                                    {
+                                        "symbol": "harvest_completed"
+                                    },
+                                    {
+                                        "address": "GARROATMIXHFWGW6HVSTKW3F5HCJIDZTXOBHW5KRM52NQNYQHPC3TF7S"
+                                    }
+                                ],
+                                "data": {
+                                    "map": [
+                                        {
+                                            "key": {
+                                                "symbol": "total_amount"
+                                            },
+                                            "val": {
+                                                "i128": "5000000"
+                                            }
+                                        },
+                                        {
+                                            "key": {
+                                                "symbol": "blocks_harvested"
+                                            },
+                                            "val": {
+                                                "u32": 2
+                                            }
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                ]
+            ]
+        }
+    }
+}

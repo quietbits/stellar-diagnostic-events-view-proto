@@ -58,11 +58,12 @@ export const TimelineView: React.FC<TimelineViewProps> = ({ events }) => {
     const isCallEvent = event.type === 'fn_call';
     const isReturnEvent = event.type === 'fn_return';
     const isContractEvent = event.type === 'contract';
+    const isFailedCall = !event.originalEvent.in_successful_contract_call;
     
     return (
       <div 
         key={`event-${event.id}`} 
-        className={`timeline-item ${nestingLevel > 0 ? 'nested' : ''}`}
+        className={`timeline-item ${nestingLevel > 0 ? 'nested' : ''} ${isFailedCall ? 'failed' : ''}`}
         style={{ marginLeft: `${nestingLevel * 2}rem` }}
       >
         <div className="timeline-marker">
@@ -73,6 +74,7 @@ export const TimelineView: React.FC<TimelineViewProps> = ({ events }) => {
         <div className={`timeline-content ${event.type}`}>
           <div className="timeline-header">
             <span className="event-index">#{event.id}</span>
+            {isFailedCall && <span className="failure-indicator">✗</span>}
             <span className={`event-type-badge ${event.type}`}>
               {event.type === 'contract' ? 'contract event' : event.type}
             </span>

@@ -11,7 +11,9 @@ export const TransactionSelector: React.FC<TransactionSelectorProps> = ({
 }) => {
   const transactions = [
     { file: 'response-1.json', label: 'Transaction 1 (KALE)' },
-    { file: 'response-2.json', label: 'Transaction 2 (SoroSwap)' }
+    { file: 'response-2.json', label: 'Transaction 2 (SoroSwap)' },
+    { file: 'response-3-failed.json', label: 'Transaction 3 (Failed)' },
+    { file: 'response-5-mixed.json', label: 'Transaction 4 (Mixed)' }
   ];
 
   return (
